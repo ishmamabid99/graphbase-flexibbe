@@ -6,7 +6,7 @@ const User = g.model("User", {
   avatarUrl: g.url(),
   description: g.string(),
   githubUrl: g.url().optional(),
-  linkedInUrl: g.url().optional(),
+  linkedInUrl: g.url().optional(),  
   projects: g
     .relation(() => Project)
     .list()
